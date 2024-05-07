@@ -21,6 +21,6 @@ body {
   opacity: 1.0;
 }
 
-#footer-link:hover {
+.footer-link:hover {
   font-weight: bold;
 }
