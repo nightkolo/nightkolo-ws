@@ -1,2 +1,3 @@
 # Portfolio website
-Powered by Github Pages, more additions (hopefully) soon.
+
+More additions (hopefully) soon.
