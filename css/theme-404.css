@@ -1,0 +1,29 @@
+/* main {
+  text-align: center;
+}
+main div {
+  width: 50%;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 40px 30px 40px 30px;
+  border-radius: 15px;
+}
+#footer {
+  opacity: 0.7;
+  transition: 300ms all;
+}
+#footer:hover {
+  opacity: 1.0;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#img-rb-chibi {
+  animation: rotate 2000ms linear infinite;
+} */
