@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  --col-bg-koblue: #2c2c56;
+  --col-bg: rgb(235, 235, 210);
+  --col-a: rgb(105, 105, 255);
+  --col-a-v: rgb(25, 25, 255);
+  --brightness-font-main: 15;
+  --brightness-shadow: 0.1;
+  --opacity-font-main: 1.0;
+  --opacity-box: 0.35;
+  --opacity-box-shadow: 0.094;
+}
+
+html {
+  background-color: var(--col-bg);
+  color: rgba(var(--brightness-font-main), var(--brightness-font-main), var(--brightness-font-main), var(--opacity-font-main));
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+a {
+  color: var(--col-a);
+}
+
+a:visited {
+  color: var(--col-a-v);
+}
+
+.fx-box {
+  background-color: rgba(255, 255, 255, var(--opacity-box));
+  box-shadow: 1px 15px 30px rgba(0, 0, 0, var(--opacity-box-shadow));
+  transition: 300ms all;
+}
+
+.fx-box:hover {
+  transform: scale(1.01);
+  background-color: rgba(255, 255, 255, calc(0.2 + var(--opacity-box)));
+  box-shadow: 1px 15px 20px rgba(0, 0, 0, calc(1.8 * var(--opacity-box-shadow)));
+}
+
+.fx-shadow {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, var(--brightness-shadow));
+}
+
+.fx-shadow-hover {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, var(--brightness-shadow));
+  transition: 300ms all;
+}
+
+.fx-shadow-hover:hover {
+  box-shadow: 0px 13px 10px rgba(0, 0, 0, calc(1.8 * var(--brightness-shadow)));
+}
+
+.fx-span-hover {
+  opacity: 0.5;
+  transition: 400ms all;
+}
+
+.fx-span-hover:hover {
+  opacity: 1.0;
+}
+
+.fx-img-style {
+  border-radius: 15px;
+  box-shadow: 1px 7px 10px rgba(0, 0, 0, var(--brightness-shadow));
+}
+
+.fx-img-hover {
+  border-radius: 15px;
+  box-shadow: 1px 7px 10px rgba(0, 0, 0, var(--brightness-shadow));
+  /* transition: 300ms all cubic-bezier(0.68, -0.55, 0.27, 3.5); */
+  transition: 300ms all ease-in;
+}
+
+.fx-img-hover:hover {
+  box-shadow: 1px 9px 10px rgba(0, 0, 0, calc(2 * var(--brightness-shadow)));
+  transform: scale(1.025);
+}
+
+/* .footer {
+} */
