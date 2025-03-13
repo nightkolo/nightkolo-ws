@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <link rel="stylesheet" href="/css/theme-main.css"> -->
-    <!-- <link rel="stylesheet" href="/css/theme-404.css"> -->
-    <link rel="stylesheet" href="css/theme-main.css">
+    <!-- <link rel="icon" href="/media/img/favicon-02.png" type="image/x-icon"> -->
+    <!-- <link rel="stylesheet" href="/styles/theme-main.css"> -->
+    <link rel="icon" href="media/img/favicon-02.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main-theme.css">
     <style>
       main {
         text-align: center;
@@ -14,21 +15,17 @@
         max-width: 500px;
         margin: 0 auto;
       }
+
       main div {
-        background-color: rgba(255, 255, 255, 0.75);
+        background-color: rgba(255, 255, 255, 0.4);
         padding: 40px 30px 40px 30px;
         border-radius: 15px;
       }
+
       #footer {
         text-align: right;
       }
-      #span-footer {
-        opacity: 0.5;
-        transition: 400ms all;
-      }
-      #span-footer:hover {
-        opacity: 1.0;
-      }
+
       @keyframes rotate {
         from {
           transform: rotate(0deg);
@@ -37,6 +34,7 @@
           transform: rotate(360deg);
         }
       }
+
       #img-rb-chibi {
         animation: rotate 2000ms linear infinite;
       }
@@ -45,22 +43,22 @@
   </head>
   <body>
     <main>
-      <div>
-        <a href="/index.html">
-          <!-- <img id="img-rb-chibi" src="/media/img/rabbitball-chibi.png" alt="shes so chibi :3" > -->
-          <img id="img-rb-chibi" src="media/img/rabbitball-chibi.png" alt="shes so chibi :3" >
-
+      <div class="fx-shadow-hover">
+        <!-- <a href="/index.html"> -->
+        <a href="index.html">
+          <!-- <img title="she spen :3" id="img-rb-chibi" src="/media/img/rabbitball-chibi.png" alt="Chibi Rabbitball spinning"> -->
+          <img title="she spen :3" id="img-rb-chibi" src="media/img/rabbitball-chibi.png" alt="Chibi Rabbitball spinning">
         </a>
         <h1>404!1!! Page not found!!!1</h1>
         <p>
-          Hm. It seems I weren't able to find this page.
+          We weren&#39;t able to find this page.
           <br><br>
-          Chibi Rabbitball's here for the rescue though, click on her to return to the Home Page.
+          Chibi Rabbitball&#39;s here for the rescue, click on her to return to the Home Page.
         </p>
       </div>
       <br>
       <p id="footer">
-        <span id="span-footer">&#169; <script> document.write(new Date().getFullYear()) </script> Night Kolo</span>
+        <span class="fx-span-hover">&#169; 2025 Night Kolo</span>
       </p>
     </main>
   </body>
