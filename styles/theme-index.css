@@ -27,6 +27,8 @@ body {
   margin: 30px var(--horizontal-margin) 30px var(--horizontal-margin);
   padding: 30px 25px 30px 25px;
   border-radius: 15px;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  
   /* background-color: rgba(255, 255, 255, 0.5); */
   /* box-shadow: 1px 15px 30px rgba(0, 0, 0, calc(1.25 * var(--opacity-shadow))); */
   /* transition: 300ms all; */
