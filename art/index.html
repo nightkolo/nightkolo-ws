@@ -38,8 +38,7 @@
       <div class="div-art-entry"
         data-img="artwork/ettiko-03.png"
         data-title="Ettiko"
-        data-desc="Placeholder"
-        data-year="2024">
+        data-desc="Placeholder">
         <div>
           <img src="artwork/ettiko-03.png" alt="">
         </div>
@@ -66,12 +65,15 @@
   </footer>
   <div id="art-modal" class="modal hidden">
     <!-- BG alpha -->
+    <span id="modal-close">&times;</span>
+    <button id="modal-left-btn">left</button>
     <div class="modal-content">
-      <span id="modal-close">&times;</span>
       <img id="modal-img" src="" alt="">
+      <p id="modal-entry-number">0 / 0</p>
       <h2 id="modal-title"></h2>
       <p id="modal-desc"></p>
     </div>
+    <button id="modal-right-btn">right</button>
   </div>
 </body>
   <script>
@@ -84,33 +86,43 @@
   const modalTitle = document.getElementById("modal-title");
   const closeBtn = document.getElementById("modal-close");
   const modalDesc = document.getElementById("modal-desc")
+  const modalEntry = document.getElementById("modal-entry-number");
 
 
   // ==============================
   // Open modal when artwork is clicked
   // ==============================
 
-  // Select ALL artwork entries on the page
-  document.querySelectorAll(".div-art-entry").forEach(entry => {
 
+  const arts = document.querySelectorAll(".div-art-entry");
+  const numberOfArtworks = arts.length;
+  console.log(arts[0]);
+
+  // Select ALL artwork entries on the page
+  for (let i = 0; i < numberOfArtworks; i++){
+  // document.querySelectorAll(".div-art-entry").forEach(entry => {
+
+    const entry = i + 1;
     // Attach a click event listener to each artwork entry
-    entry.addEventListener("click", () => {
+    arts[i].addEventListener("click", () => {
 
       // Read the image path from this element's data-img attribute
       // and assign it to the modal image src
       // dataset allows JS to access HTML data-* attributes
-      modalImg.src = entry.dataset.img;
+      modalImg.src = arts[i].dataset.img;
 
       // Read the artwork title from this element's data-title attribute
       // and insert it as text into the modal title element
-      modalTitle.textContent = entry.dataset.title;
+      modalTitle.textContent = arts[i].dataset.title;
 
-      modalDesc.textContent = entry.dataset.desc;
+      modalDesc.textContent = arts[i].dataset.desc;
+
+      modalEntry.textContent = `${entry} / ${numberOfArtworks}`;
 
       // Remove the "hidden" class so the modal becomes visible
       modal.classList.remove("hidden");
     });
-  });
+  }
 
 
   // ==============================

@@ -119,10 +119,9 @@ main {
 
 #modal-close {                     /* Close (×) button */
   position: absolute;              /* Position relative to modal-content */
-  /* top: 0.5rem;                     Offset slightly from the top */
-  right: 0.75rem;                  /* Optional right offset (currently disabled) */
+  /* top: 0.5rem;                   /*  Offset slightly from the top */
+  /* right: 0.75rem;                  Optional right offset (currently disabled) */
   font-size: 2rem;                 /* Make close icon large and clickable */
-  
   cursor: pointer;                 /* Show pointer cursor on hover */
 }
 
