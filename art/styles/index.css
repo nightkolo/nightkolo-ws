@@ -89,23 +89,36 @@ main {
   </div> */
 
 .modal {                           /* Full-screen modal overlay container */
-  position: fixed;                 /* Fix element to the viewport (ignores scrolling) */
-  inset: 0;                        /* Stretch to all screen edges (top/right/bottom/left = 0) */
-  background: rgba(0, 0, 0, 0.5);  /* Semi-transparent dark backdrop */
-  display: flex;                   /* Enable flexbox for centering content */
-  align-items: center;             /* Center modal content vertically */
-  justify-content: center;         /* Center modal content horizontally */
-  z-index: 999;                    /* Ensure modal appears above other elements */
+  /* Fix element to the viewport (ignores scrolling) */
+  position: fixed;
+  /* Stretch to all screen edges (top/right/bottom/left = 0) */
+  inset: 0;
+  /* Semi-transparent dark backdrop */
+  background-color: rgba(0, 0, 0, 0.5); 
+  /* Enable flexbox for centering content */
+  display: flex;
+  /* Center modal content vertically */
+  align-items: center;
+  /* Center modal content horizontally */
+  justify-content: center;
+  /* Ensure modal appears above other elements */
+  z-index: 999;
 }
 
 .modal-content {                   /* Inner modal box that holds content */
-  background: #ffffff;             /* White background for contrast */
-  color: black;                    /* Black text color */
-  padding: 20px;                   /* Space between content and edges */
-  max-width: 100%;                  /* Prevent modal from being too wide */
-  max-height: 100%;                 /* Prevent modal from being too tall */
-  position: relative;              /* Anchor for absolutely positioned children */
-  text-align: center;
+  /* White background for contrast */
+  background: #ffffff; 
+  /* Black text color */
+  color: black; 
+  /* Space between content and edges */
+  padding: 20px; 
+  /* Prevent modal from being too wide */
+  max-width: 100%; 
+  /* Prevent modal from being too tall */
+  max-height: 100%; 
+  /* Anchor for absolutely positioned children */
+  position: relative; 
+  text-align: center; 
 }
 
 .modal-content h2 p {

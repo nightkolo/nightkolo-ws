@@ -65,14 +65,16 @@
   </footer>
   <div id="art-modal" class="modal hidden">
     <!-- BG alpha -->
-    <span id="modal-close">&times;</span>
     <button id="modal-left-btn">left</button>
+    
     <div class="modal-content">
+      <span id="modal-close">&times;</span>
       <img id="modal-img" src="" alt="">
       <p id="modal-entry-number">0 / 0</p>
       <h2 id="modal-title"></h2>
       <p id="modal-desc"></p>
     </div>
+
     <button id="modal-right-btn">right</button>
   </div>
 </body>
@@ -88,65 +90,86 @@
   const modalDesc = document.getElementById("modal-desc")
   const modalEntry = document.getElementById("modal-entry-number");
 
+  const leftBtn = document.getElementById("modal-left-btn");
+  const rightBtn = document.getElementById("modal-right-btn");
 
   // ==============================
   // Open modal when artwork is clicked
   // ==============================
 
-
   const arts = document.querySelectorAll(".div-art-entry");
   const numberOfArtworks = arts.length;
-  console.log(arts[0]);
+
+  let currentIndex = 0;
 
   // Select ALL artwork entries on the page
   for (let i = 0; i < numberOfArtworks; i++){
-  // document.querySelectorAll(".div-art-entry").forEach(entry => {
-
-    const entry = i + 1;
-    // Attach a click event listener to each artwork entry
     arts[i].addEventListener("click", () => {
-
-      // Read the image path from this element's data-img attribute
-      // and assign it to the modal image src
-      // dataset allows JS to access HTML data-* attributes
-      modalImg.src = arts[i].dataset.img;
-
-      // Read the artwork title from this element's data-title attribute
-      // and insert it as text into the modal title element
-      modalTitle.textContent = arts[i].dataset.title;
-
-      modalDesc.textContent = arts[i].dataset.desc;
-
-      modalEntry.textContent = `${entry} / ${numberOfArtworks}`;
-
-      // Remove the "hidden" class so the modal becomes visible
-      modal.classList.remove("hidden");
+      loadArtworkPopup(i);
     });
   }
 
+  document.addEventListener('keydown', (event) => {
+    if (event.key === "ArrowRight"){
+      cycleArtwork(1);
+    } else if (event.key === "ArrowLeft") {
+      cycleArtwork(-1); 
+    } else if (event.key === "Escape") {
+      closeArtworkPopup();
+    }
+  });
 
-  // ==============================
-  // Close modal when close button is clicked
-  // ==============================
+  rightBtn.addEventListener("click", () => {
+    cycleArtwork(1);
+  });
 
-  // Listen for a click on the × button
-  closeBtn.addEventListener("click", () => {
-    // Add the "hidden" class back to hide the modal
-    modal.classList.add("hidden");
+  leftBtn.addEventListener("click", () => {
+    cycleArtwork(-1);
   });
 
 
-  // ==============================
-  // Close modal when clicking the background
-  // ==============================
+  function cycleArtwork(move = 1){
+    const setIndex = (currentIndex + Math.sign(move) + numberOfArtworks) % numberOfArtworks;
+    loadArtworkPopup(setIndex);
+  }
 
+  function loadArtworkPopup(index){
+    const entry = index + 1;
+    currentIndex = index;
+
+    // Read the image path from this element's data-img attribute
+    // and assign it to the modal image src
+    // dataset allows JS to access HTML data-* attributes
+    modalImg.src = arts[index].dataset.img;
+
+    // Read the artwork title from this element's data-title attribute
+    // and insert it as text into the modal title element
+    modalTitle.textContent = arts[index].dataset.title;
+    modalDesc.textContent = arts[index].dataset.desc;
+    modalEntry.textContent = `${entry} / ${numberOfArtworks}`;
+    // Remove the "hidden" class so the modal becomes visible
+    modal.classList.remove("hidden");
+  }
+
+  // Close modal
+  function closeArtworkPopup(){
+    // Add the "hidden" class so the modal becomes invisible
+    modal.classList.add("hidden");
+  }
+
+  closeBtn.addEventListener("click", () => {
+    closeArtworkPopup();
+  });
+
+
+  // Close modal when clicking the background
   // Listen for clicks anywhere on the modal overlay
   modal.addEventListener("click", (e) => {
     // Only close modal if the background (modal itself) is clicked,
     // not the modal content
     if (e.target === modal) {
       // Hide the modal
-      modal.classList.add("hidden");
+      closeArtworkPopup();
     }
   });
   </script>
