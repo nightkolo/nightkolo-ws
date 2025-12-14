@@ -4,19 +4,52 @@
 :root {
   --col-bg-koblue: #2c2c56;
   --col-bg: rgb(155, 101, 255);
-  --col-a: rgb(105, 105, 255);
+  --col-a: rgb(205, 205, 255);
   --col-a-v: rgb(25, 25, 255);
   --brightness-font-main: 15;
-  --brightness-shadow: 0.1;
+  --brightness-shadow: 0.5;
   --opacity-font-main: 1.0;
   --opacity-box: 0.35;
   --opacity-box-shadow: 0.094;
 }
 
 html {
+  position: relative;
+  min-height: 100%;
+  color: snow;
+}
+
+/*
+  Creates a rotating background layer using a pseudo-element.
+  Uses position: fixed to keep it stationary relative to the viewport,
+  inset: -50% to make the background larger than the viewport for smooth rotation,
+  z-index: -1 to place it behind all other content,
+  and an infinite linear animation for continuous rotation.
+*/
+html::before {
+  content: "";
+  position: fixed;
+  inset: -50%;
+  background-image: url('/media/bg/bg-01.png');
+  background-repeat: repeat;
+  background-position: center;
+  animation: bg-rotate 120s linear infinite;
+  z-index: -1;
+}
+/* Rotates the background slowly and smoothly for a dynamic visual effect */
+@keyframes bg-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* html {
   background-color: var(--col-bg);
   color: rgba(var(--brightness-font-main), var(--brightness-font-main), var(--brightness-font-main), var(--opacity-font-main));
-}
+} */
 
 body {
   font-family: 'Nunito', sans-serif;
@@ -82,5 +115,18 @@ a:visited {
   transform: scale(1.025);
 }
 
-/* .footer {
-} */
+/* custom styling */
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Safari */
+  -khtml-user-select: none;    /* Konqueror HTML */
+  -moz-user-select: none;      /* Old versions of Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Standard syntax */
+  /* cursor: default;             Optional: ensures the cursor is an arrow, not a text selection caret */
+}
+
+footer {
+  text-align: center;
+  margin: 100px 100px 100px 100px;
+}
