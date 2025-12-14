@@ -5,30 +5,6 @@
   }
 }
 
-/* Position html relative to contain absolute/fixed children and ensure it fills the viewport height */
-/* html {
-  position: relative;
-  min-height: 100%;
-} */
-
-/*
-  Creates a rotating background layer using a pseudo-element.
-  Uses position: fixed to keep it stationary relative to the viewport,
-  inset: -50% to make the background larger than the viewport for smooth rotation,
-  z-index: -1 to place it behind all other content,
-  and an infinite linear animation for continuous rotation.
-*/
-/* html::before {
-  content: "";
-  position: fixed;
-  inset: -50%;
-  background-image: url('/media/bg/bg-01.png');
-  background-repeat: repeat;
-  background-position: center;
-  animation: bg-rotate 120s linear infinite;
-  z-index: -1;
-} */
-
 body {
   font-size: 13pt;
   max-width: 800px;
@@ -75,6 +51,7 @@ main {
     transform 300ms cubic-bezier(0.68, -0.55, 0.27, 3.5),
     background-color 300ms;
 }
+
 .div-art-entry:hover {
   transform: scale(1.025);
   background-color: #0095ff;
@@ -106,13 +83,3 @@ img {
   height: auto;
   display: block;
 }
-
-/* Rotates the background slowly and smoothly for a dynamic visual effect
-@keyframes bg-rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
