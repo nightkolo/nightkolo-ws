@@ -26,17 +26,24 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam expedita ullam accusantium distinctio cumque sint fuga porro possimus ab error ratione minus.
     </p>
     <div class="div-grid-content">
-      <div class="div-art-entry">
+      <div class="div-art-entry"
+          data-img="artwork/the-bomb.png"
+          data-title="Bomberman!"
+          data-desc="Placeholder">
         <div>
           <img src="artwork/the-bomb.png" alt="">
         </div>
-        <h2 class="unselectable">Artwork #1</h2>
+        <h2 class="unselectable">Bomberman!</h2>
       </div>
-      <div class="div-art-entry">
+      <div class="div-art-entry"
+        data-img="artwork/ettiko-03.png"
+        data-title="Ettiko"
+        data-desc="Placeholder"
+        data-year="2024">
         <div>
           <img src="artwork/ettiko-03.png" alt="">
         </div>
-        <h2 class="unselectable">Artwork #2</h2>
+        <h2 class="unselectable">Ettiko</h2>
       </div>
       <div class="div-art-entry">
         <div>
@@ -46,59 +53,10 @@
       </div>
       <div class="div-art-entry">
         <div>
-          <img src="artwork/the-bomb.png" alt="">
+          <img src="artwork/IMG_3943.jpeg" alt="">
         </div>
-        <h2 class="unselectable">Artwork #1</h2>
+        <h2 class="unselectable">Artwork #4</h2>
       </div>
-      <div class="div-art-entry">
-        <div>
-          <img src="artwork/ettiko-03.png" alt="">
-        </div>
-        <h2 class="unselectable">Artwork #2</h2>
-      </div>
-      <div class="div-art-entry">
-        <div>
-          <img src="artwork/kologen.png" alt="">
-        </div>
-        <h2 class="unselectable">Artwork #3</h2>
-      </div>
-      <div class="div-art-entry">
-        <div>
-          <img src="artwork/the-bomb.png" alt="">
-        </div>
-        <h2 class="unselectable">Artwork #1</h2>
-      </div>
-      <div class="div-art-entry">
-        <div>
-          <img src="artwork/ettiko-03.png" alt="">
-        </div>
-        <h2 class="unselectable">Artwork #2</h2>
-      </div>
-      <div class="div-art-entry">
-        <div>
-          <img src="artwork/kologen.png" alt="">
-        </div>
-        <h2 class="unselectable">Artwork #3</h2>
-      </div>
-      <div class="div-art-entry">
-        <div>
-          <img src="artwork/the-bomb.png" alt="">
-        </div>
-        <h2 class="unselectable">Artwork #1</h2>
-      </div>
-      <div class="div-art-entry">
-        <div>
-          <img src="artwork/ettiko-03.png" alt="">
-        </div>
-        <h2 class="unselectable">Artwork #2</h2>
-      </div>
-      <div class="div-art-entry">
-        <div>
-          <img src="artwork/kologen.png" alt="">
-        </div>
-        <h2 class="unselectable">Artwork #3</h2>
-      </div>
-  
     </div>
   </main>
   <footer>
@@ -106,5 +64,78 @@
       <a href="/terms">Terms</a>,
       <a href="/privacy">Privacy</a></span>
   </footer>
+  <div id="art-modal" class="modal hidden">
+    <!-- BG alpha -->
+    <div class="modal-content">
+      <span id="modal-close">&times;</span>
+      <img id="modal-img" src="" alt="">
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
 </body>
+  <script>
+  // ==============================
+  // Modal element references
+  // ==============================
+
+  const modal = document.getElementById("art-modal");
+  const modalImg = document.getElementById("modal-img");
+  const modalTitle = document.getElementById("modal-title");
+  const closeBtn = document.getElementById("modal-close");
+  const modalDesc = document.getElementById("modal-desc")
+
+
+  // ==============================
+  // Open modal when artwork is clicked
+  // ==============================
+
+  // Select ALL artwork entries on the page
+  document.querySelectorAll(".div-art-entry").forEach(entry => {
+
+    // Attach a click event listener to each artwork entry
+    entry.addEventListener("click", () => {
+
+      // Read the image path from this element's data-img attribute
+      // and assign it to the modal image src
+      // dataset allows JS to access HTML data-* attributes
+      modalImg.src = entry.dataset.img;
+
+      // Read the artwork title from this element's data-title attribute
+      // and insert it as text into the modal title element
+      modalTitle.textContent = entry.dataset.title;
+
+      modalDesc.textContent = entry.dataset.desc;
+
+      // Remove the "hidden" class so the modal becomes visible
+      modal.classList.remove("hidden");
+    });
+  });
+
+
+  // ==============================
+  // Close modal when close button is clicked
+  // ==============================
+
+  // Listen for a click on the × button
+  closeBtn.addEventListener("click", () => {
+    // Add the "hidden" class back to hide the modal
+    modal.classList.add("hidden");
+  });
+
+
+  // ==============================
+  // Close modal when clicking the background
+  // ==============================
+
+  // Listen for clicks anywhere on the modal overlay
+  modal.addEventListener("click", (e) => {
+    // Only close modal if the background (modal itself) is clicked,
+    // not the modal content
+    if (e.target === modal) {
+      // Hide the modal
+      modal.classList.add("hidden");
+    }
+  });
+  </script>
 </html>
