@@ -67,11 +67,17 @@ body {
 }
 
 .social-link {
+  text-decoration: none;
+  margin: 0px 10px 0px 10px;
   transition: 300ms all;
 }
 
-.social-link:hover {
+/* .social-link:hover {
   font-weight: 800;
+} */
+
+.img-icon{
+  width: 50px;
 }
 
 #footer {

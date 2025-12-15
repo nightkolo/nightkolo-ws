@@ -4,8 +4,8 @@
 :root {
   --col-bg-koblue: #2c2c56;
   --col-bg: rgb(155, 101, 255);
-  --col-a: rgb(205, 205, 255);
-  --col-a-v: rgb(25, 25, 255);
+  --col-a: rgb(255, 253, 50);
+  --col-a-v: rgb(255, 255, 100);
   --brightness-font-main: 15;
   --brightness-shadow: 0.5;
   --opacity-font-main: 1.0;
@@ -22,12 +22,10 @@
   margin: 50px auto;
 }
 
-
-
 html {
   position: relative;
   min-height: 100%;
-  color: snow;
+  color: white;
 }
 
 /*
