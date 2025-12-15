@@ -33,7 +33,7 @@ html::before {
   background-image: url('/media/bg/bg-01.png');
   background-repeat: repeat;
   background-position: center;
-  animation: bg-rotate 120s linear infinite;
+  /* animation: bg-rotate 120s linear infinite; */
   z-index: -1;
 }
 /* Rotates the background slowly and smoothly for a dynamic visual effect */

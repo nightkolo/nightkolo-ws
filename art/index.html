@@ -23,8 +23,9 @@
     </a>
     <h1 class="heading">Digital Art</h1>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam expedita ullam accusantium distinctio cumque sint fuga porro possimus ab error ratione minus.
+      Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. 
     </p>
+    <!--  -->
     <div class="div-grid-content">
       <div class="div-art-entry"
           data-img="artwork/the-bomb.png"
@@ -65,18 +66,50 @@
   </footer>
   <div id="art-modal" class="modal hidden">
     <!-- BG alpha -->
-    <button id="modal-left-btn">left</button>
+    <button id="modal-left-btn">
+      <img src="/media/svg/arrow-left-02.svg" alt="Left Arrow">
+    </button>
     
+    <!-- Close button -->
+    <span id="modal-close">&times;</span>
+
     <div class="modal-content">
-      <span id="modal-close">&times;</span>
       <img id="modal-img" src="" alt="">
       <p id="modal-entry-number">0 / 0</p>
       <h2 id="modal-title"></h2>
       <p id="modal-desc"></p>
     </div>
 
-    <button id="modal-right-btn">right</button>
+    <button id="modal-right-btn">
+      <img src="/media/svg/arrow-right-02.svg" alt="Right Arrow">
+    </button>
   </div>
+  <!--
+    ==============================
+    Developer Cheat Sheet
+    ==============================
+    How the modal works:
+      - The modal is shown when an artwork entry (with class "div-art-entry") is clicked.
+      - The modal displays the image, title, and description from the clicked entry's data-* attributes.
+      - Navigation buttons ("left" and "right") and arrow keys allow cycling through artworks.
+      - The modal can be closed by clicking the close button (&times;), pressing Escape, or clicking the modal background.
+
+    How data-* attributes are used:
+      - Each ".div-art-entry" may have data-img, data-title, and data-desc attributes.
+      - JavaScript reads these via element.dataset (e.g., arts[index].dataset.img) to populate the modal.
+      - If an entry is missing a data-* attribute, modal content may appear blank.
+
+    How the navigation buttons work:
+      - Left and right buttons (with ids "modal-left-btn" and "modal-right-btn") cycle through the artworks.
+      - Keyboard ArrowLeft and ArrowRight keys also cycle the modal content.
+      - Cycling wraps around at the ends.
+
+    How to safely make small changes:
+      - To add or change an artwork, edit or duplicate a ".div-art-entry" div. Set the correct data-img, data-title, and data-desc.
+      - Avoid removing required data-* attributes, or the modal may show blank fields.
+      - For style or text tweaks, update the relevant CSS or HTML.
+      - Test modal and navigation after changes to ensure UX is not broken.
+  -->
 </body>
   <script>
   // ==============================
@@ -127,7 +160,6 @@
     cycleArtwork(-1);
   });
 
-
   function cycleArtwork(move = 1){
     const setIndex = (currentIndex + Math.sign(move) + numberOfArtworks) % numberOfArtworks;
     loadArtworkPopup(setIndex);
@@ -160,7 +192,6 @@
   closeBtn.addEventListener("click", () => {
     closeArtworkPopup();
   });
-
 
   // Close modal when clicking the background
   // Listen for clicks anywhere on the modal overlay
