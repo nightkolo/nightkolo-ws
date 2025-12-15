@@ -1,0 +1,14 @@
+.div-grid-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+.game-entry {
+  background-color: white;
+  width: 75%;
+  height: 200px;
+  margin: 20px;
+  color: black;
+}
+

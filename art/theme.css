@@ -1,6 +1,4 @@
 :root {
-  --primary-color: #3498db; /* Global scope */
-  --base-font-size: 16px;
   --border-rad: 20px;
   --border-rad-small: 20px;
 }
@@ -11,28 +9,6 @@
     height: 140px;
   }
 }
-
-body {
-  font-size: 13pt;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-main {
-  text-align: center;
-}
-
-#header-logo{
-  width: 200px;
-  margin: 50px auto;
-}
-
-.heading {
-  color: yellow;
-  font-size: 52px;
-  margin: 0;
-  text-shadow: 1px 8px 4px rgba(0, 0, 0, 0.1);
-} 
 
 .div-grid-content {
   display: grid;
