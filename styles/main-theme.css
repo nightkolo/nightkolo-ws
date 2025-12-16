@@ -7,7 +7,7 @@
   --col-a: rgb(255, 253, 50);
   --col-a-v: rgb(255, 255, 100);
   --brightness-font-main: 15;
-  --brightness-shadow: 0.5;
+  --brightness-shadow: 0.1;
   --opacity-font-main: 1.0;
   --opacity-box: 0.25;
   --opacity-box-shadow: 0.094;
@@ -83,6 +83,14 @@ a:visited {
   transform: scale(1.01);
   background-color: rgba(255, 255, 255, calc(0.1 + var(--opacity-box)));
   box-shadow: 1px 15px 20px rgba(0, 0, 0, calc(1.8 * var(--opacity-box-shadow)));
+}
+
+.fx-box-hover{
+  transition: 300ms all;
+}
+
+.fx-box-hover:hover {
+  transform: scale(1.01);
 }
 
 .fx-shadow {
