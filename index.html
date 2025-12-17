@@ -36,7 +36,7 @@
 
     <div class="div-main-content fx-box">
       <div class="div-leftside">
-        <img class="img-pfp" src="media/img/pfp-main.png" alt="PFP" title="🌙">
+        <img class="img-kologen" src="media/elements/kologen-greet-01-01.png" alt="Kologen" title="Hi - ◡ -">
       </div>
       <div class="div-rightside">
         <main>
@@ -80,5 +80,18 @@
       <a href="/terms">Terms</a>,
       <a href="/privacy">Privacy</a></span>
     </footer>
+    <script>
+      const img = document.querySelector(".img-kologen");
+
+      img.addEventListener("mouseenter", () => {
+        img.style.transform = "translateY(-55px)";
+        img.src = "media/elements/kologen-greet-02-02.png";
+      });
+
+      img.addEventListener("mouseleave", () => {
+        img.style.transform = "translateY(0)";
+        img.src = "media/elements/kologen-greet-01-01.png";
+      });
+    </script>
   </body>
 </html>

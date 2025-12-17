@@ -11,6 +11,7 @@ body {
 
 @media (max-width: 625px) {
   .div-main-content {
+    max-height: none !important;
     flex-direction: column;
     margin: 30px 0px 30px 0px !important;
   }
@@ -28,6 +29,7 @@ body {
 
 .div-main-content {
   display: flex;
+  max-height: 180px;
   margin: 30px var(--horizontal-margin) 30px var(--horizontal-margin);
   padding: 30px 25px 30px 25px;
   border-radius: 15px;
@@ -44,9 +46,9 @@ body {
 } */
 
 .div-main-content .div-leftside {
-  width: 250px;
-  margin-top: 25px;
-  text-align: center;
+  width: 300px;
+  /* margin-top: 25px; */
+  /* text-align: center; */
 }
 
 .div-main-content .div-rightside {
@@ -60,6 +62,21 @@ body {
   box-shadow: 1px 7px 10px rgba(0, 0, 0, var(--opacity-shadow));
   transition: 300ms all cubic-bezier(0.68, -0.55, 0.27, 3.5);
 }
+
+.img-kologen {
+  position: relative;
+  top: -10px;
+  width: 250px;
+  /* margin-bottom: 90px; */
+}
+
+.div-leftside:hover .img-kologen {
+  width: 320px;
+  /* margin-top: 25px; */
+  /* text-align: center; */
+}
+
+
 
 .img-pfp:hover {
   box-shadow: 1px 9px 10px rgba(0, 0, 0, calc(2 * var(--opacity-shadow)));
