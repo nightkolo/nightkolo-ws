@@ -10,10 +10,14 @@
   }
 }
 
+body {
+  max-width: 850px;
+}
+
 .div-grid-content {
   display: grid;
   /* Responsive grid: create as many columns as fit, each at least 200px */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   margin: 100px 0px 100px 0px;
 }
@@ -130,7 +134,7 @@
   /* Prevent horizontal overflow */
   max-width: 100%; 
   /* Limit image height to viewport height */
-  max-height: 80vh; 
+  max-height: 86vh; 
   border-radius: var(--border-rad-small);
 }
 

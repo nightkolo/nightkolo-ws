@@ -9,10 +9,10 @@ body {
   margin: 0 auto;
 }
 
-@media (max-width: 625px) {
+@media (max-width: 700px) {
   .div-main-content {
     max-height: none !important;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 30px 0px 30px 0px !important;
   }
   .div-main-content .div-leftside {
@@ -67,16 +67,11 @@ body {
   position: relative;
   top: -10px;
   width: 250px;
-  /* margin-bottom: 90px; */
 }
 
-.div-leftside:hover .img-kologen {
+.div-main-content:hover .img-kologen {
   width: 320px;
-  /* margin-top: 25px; */
-  /* text-align: center; */
 }
-
-
 
 .img-pfp:hover {
   box-shadow: 1px 9px 10px rgba(0, 0, 0, calc(2 * var(--opacity-shadow)));
