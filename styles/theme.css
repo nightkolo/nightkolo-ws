@@ -12,7 +12,7 @@ body {
 @media (max-width: 700px) {
   .div-main-content {
     max-height: none !important;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin: 30px 0px 30px 0px !important;
   }
   .div-main-content .div-leftside {
