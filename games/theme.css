@@ -26,6 +26,9 @@
   } */
 }
 
+#a-games-link {
+  font-weight: 900;
+}
 
 .div-grid-content {
   display: grid;
