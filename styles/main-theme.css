@@ -24,6 +24,7 @@
 
 .div-lang-options{
   position: absolute;
+  text-align: right;
   top: 40px;
   right: 40px;
 }
@@ -46,12 +47,18 @@ html::before {
   content: "";
   position: fixed;
   inset: -50%;
-  background-image: url('/media/bg/bg-01.png');
+  background-image: url('/media/bg/bg-03.png');
   background-repeat: repeat;
   background-position: center;
   animation: bg-rotate 120s linear infinite;
   z-index: -1;
 }
+
+/* Reduce motion mode */
+html.reduce-motion::before {
+  animation: none;
+}
+
 /* Rotates the background slowly and smoothly for a dynamic visual effect */
 @keyframes bg-rotate {
   from {
