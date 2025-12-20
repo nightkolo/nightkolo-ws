@@ -65,6 +65,7 @@ body {
 
 .img-kologen {
   position: relative;
+  pointer-events: none;
   top: -10px;
   width: 250px;
 }
@@ -76,6 +77,15 @@ body {
 .img-pfp:hover {
   box-shadow: 1px 9px 10px rgba(0, 0, 0, calc(2 * var(--opacity-shadow)));
   transform: scale(1.0375);
+}
+
+.a-portal-link {
+  font-weight: bold;
+  transition: all 300ms;
+}
+
+.a-portal-link:hover {
+  font-weight: 900;
 }
 
 .social-link {
