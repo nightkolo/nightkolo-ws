@@ -90,7 +90,7 @@
     // Read the artwork title from this element's data-title attribute
     // and insert it as text into the modal title element
     modalTitle.textContent = arts[index].dataset.title;
-    modalDesc.textContent = arts[index].dataset.desc;
+    modalDesc.innerHTML = arts[index].dataset.desc;
     modalEntry.textContent = `${entry} / ${numberOfArtworks}`;
     // Remove the "hidden" class so the modal becomes visible
     modal.classList.remove("hidden");

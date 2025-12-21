@@ -26,9 +26,6 @@
   } */
 }
 
-#a-games-link {
-  font-weight: 900;
-}
 
 .div-grid-content {
   display: grid;
@@ -65,7 +62,7 @@
 }
 
 .a-game-link:hover {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .a-game-link:visited {
