@@ -2,12 +2,12 @@
   "page-name": {
     "home": "Kolo's website",
     "art": "Night Kolo &bullet; Art",
-    "game": "Night Kolo &bullet; Games",
+    "games": "Night Kolo &bullet; Games",
     "about": "About Night Kolo",
     "terms": "Night Kolo &bullet; Terms of Service",
     "privacy": "Night Kolo &bullet; Privacy Statement"
   },
-  "titles": {
+  "hover-info": {
     "art": "My Art",
     "games": "My Games",
     "about": "About Me",
@@ -20,7 +20,7 @@
     "games": "Games",
     "about": "About"
   },
-  "home": {
+  "home-page": {
     "greet": "Hello there!",
     "short-bio": "I'm <strong>Night Kolo</strong>, call me <strong>Kolo</strong>.",
     "social-info": "<strong>My Socials:</strong>",
@@ -28,8 +28,25 @@
     "games": "My Games",
     "about": "About Me"
   },
-  "art": {
+  "art-page": {
     "header": "Art and Design",
     "desc": "I occassionally enjoy drawing illustrations on my Huion tablet. I also do vector-based art for my logo designs, game assets, and covers, as well as animating them in-game. My drawing style consists of simple character designs with attractive colorful illustrations. Kologen is my OC, which you see on the home page and my logo!<br><br>I regularly sketch on my sketchbook during my free-time at my major. Please enjoy what I got to offer on my little art gallery. Click for more info."
+  },
+  "games-page": {
+    "desc": "I began making games from a long-time game design passion. Earliest of it was with the Geometry Dash level editor, experimenting with triggers and creating simple minigames. Later on, I moved to the Godot game engine, where I began self-learning game development principles which exposed me to multiple creative disciplines, making art (assets), animation, game logic, and codebases.<br><br>Over time, I began explored other tools to make games, such as the p5.js creative coding library, which allowed me to implement math to create game logic, collisions, and rapid prototypes. Hope you enjoy what I have here.",
+    "tank": "Shooter-style game I made in p5.js about a tiny tank!",
+    "boko": "Twisty sliding puzzle game with a silly top hat man. Featuring music by Avizura",
+    "rabbitball": "Physics game about guiding a ball with eyes.",
+    "walking": "Gravity puzzle platformer about walking on the ceiling.",
+    "play": "Play"
+  },
+  "about-page": {
+    "header": "About me",
+    "header2": "Contact me",
+    "quote": "Crescent moon sphere-head",
+    "bio": "Hi! My name is <strong>Sanad Almemari</strong> (سند المعمري), known online as <strong>Night Kolo</strong><br>Thank you for stopping by my portfolio!<br><br>I’m a hobbyist Emirati <strong>game developer</strong> and <strong>digital artist</strong> with a passion for playful ideas and occasional silliness. If you like strange projects made with care, you&apos;ll probably like it here.<br><br>I am currently studying Computer Science. I made this website to be presentable, showcase my artwork, games, and creative projects online. You can view all of my silly projects on the web here!",
+    "contact1": "I'm open to chatting about games, art, or projects. Please contact me in English. Reach out to me via:",
+    "contact2": "Feel free to follow along, play my games, or just say hi!"
   }
+
 }

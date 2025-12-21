@@ -36,19 +36,19 @@ async function loadLanguage(lang) {
   // Find all elements marked for title attribute translation
   document.querySelectorAll("[data-i18n][data-i18n-attr]").forEach(el => {
     const attrName = el.dataset.i18nAttr; // e.g. "title"
-    const key = el.dataset.i18n;          // e.g. "titles.home"
+    const key = el.dataset.i18n;          // e.g. "hover-info.home"
 
-    // `key` is a dot-separated string like "titles.home"
-    // We want to resolve it to translations.titles.home
+    // `key` is a dot-separated string like "hover-info.home"
+    // We want to resolve it to translations.hover-info.home
 
     const value = key
       // Split the string into parts:
-      // "titles.home" → ["titles", "home"]
+      // "hover-info.home" → ["hover-info", "home"]
       .split(".")
 
       // Walk through the translations object using each part
       // `obj` starts as `translations`
-      // `part` is each key in the array ("titles", then "home")
+      // `part` is each key in the array ("hover-info", then "home")
       .reduce((obj, part) => {
         // Optional chaining (?.) prevents errors if a key is missing
         // Equivalent to: obj && obj[part]
@@ -62,12 +62,12 @@ async function loadLanguage(lang) {
   // document.querySelectorAll("[data-i18n]").forEach(el => {
   // Find all elements marked for translation
   for (const el of document.querySelectorAll("[data-i18n]")) {
-    if (el.dataset.i18n.includes("titles")) continue;
+    if (el.dataset.i18n.includes("hover-info")) continue;
     
     const key = el.dataset.i18n;
 
-    // `key` is a dot-separated string like "titles.home"
-    // We want to resolve it to translations.titles.home
+    // `key` is a dot-separated string like "hover-info.home"
+    // We want to resolve it to translations.hover-info.home
 
     const value = key
       .split(".")

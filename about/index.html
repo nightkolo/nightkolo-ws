@@ -6,16 +6,16 @@
   <meta name="description" content="Night Kolo's About Me page">
   <meta name="author" content="Night Kolo">
   
-  <!-- <meta property="og:title" content="Night Kolo's art">
+  <meta property="og:title" content="About Night Kolo">
   <meta property="og:description" content="Me's Night Kolo -- Call me Kolo.">
   <meta property="og:url" content="https://nightkolo.io">
-  <meta property="og:type" content="website"> -->
+  <meta property="og:type" content="website">
 
   <link rel="icon" href="/media/img/favicon-02.png" type="image/x-icon">
   <link rel="stylesheet" href="/styles/main-theme.css">
   <link rel="stylesheet" href="/styles/page-theme.css">
   <link rel="stylesheet" href="theme.css">
-  <title>About Night Kolo</title>
+  <title data-i18n="page-name.about">About Night Kolo</title>
 </head>
 <body id="top">
   <div class="div-lang-options">
@@ -28,7 +28,7 @@
   </div>
   <main>
     
-    <a href="../" title="Home Page" data-i18n-attr="title" data-i18n="titles.home">
+    <a href="/" title="Home Page" data-i18n-attr="title" data-i18n="hover-info.home">
       <img id="header-logo" src="/media/img/logo-white-01.png" alt="Logo">
     </a>
     <nav class="site-portal">
@@ -43,19 +43,17 @@
     </div>
     <div>
       <section id="about">
-        <h1 class="heading">About Me</h1>
+        <h1  data-i18n="about-page.header" class="heading">About Me</h1>
         <section id="fun-quote">
           <blockquote>
-            "Crescent moon sphere-head"
+            "<span data-i18n="about-page.quote">Crescent moon sphere-head</span>"
           </blockquote>
         </section>
-        <p>
+        <p data-i18n="about-page.bio">
           Hi! My name is <strong>Sanad Almemari</strong> (سند المعمري), known online as <strong>Night Kolo</strong><br>Thank you for stopping by my portfolio!
-        </p>
-        <p>
+        <br><br>
           I’m a hobbyist Emirati <strong>game developer</strong> and <strong>digital artist</strong> with a passion for playful ideas and occasional silliness. If you like strange projects made with care, you&apos;ll probably like it here.
-        </p>
-        <p>
+        <br><br>
           I am currently studying Computer Science. I made this website to be presentable, showcase my artwork, games, and creative projects online. You can view all of my silly projects on the web here!
         </p>
       </section>
@@ -69,15 +67,15 @@
       </section>
 
     <section id="contact">
-      <h1 class="heading">Contact Me</h1>
-      <p>
+      <h1 data-i18n="about-page.header2" class="heading">Contact Me</h1>
+      <p data-i18n="about-page.contact1">
         I&apos;m open to chatting about games, art, or projects. Reach out to me via:
       </p>
       <ul>
         <!-- <li>Email: <a href="mailto:nightkolo@example.com">nightkolo@example.com</a></li> -->
         <li>Discord: <strong>@nightkolo</strong></li>
       </ul>
-      <p>
+      <p data-i18n="about-page.contact2">
         Feel free to follow along, play my games, or just say hi!
       </p>
     </section>
@@ -85,12 +83,15 @@
 
     
   </main>
-  <footer>
-    <span class="fx-span-hover">&#169; <script> document.write(new Date().getFullYear()) </script> Night Kolo &bullet;
-    <a href="/terms">Terms</a>,
-    <a href="/privacy">Privacy</a>
-    </span>
-  </footer>
+  <footer id="footer-footer">
+      <span class="fx-span-hover">&#169; <script> document.write(new Date().getFullYear()) </script> 
+        <span data-i18n="generic.footer">
+          Night Kolo &bullet;
+          <a href='/terms'>Terms</a>,
+          <a href='/privacy'>Privacy</a>
+        </span>
+      </span>
+    </footer>
 
   <script src="/scripts/main-script.js"></script>
   <script src="/scripts/prefs.js"></script>

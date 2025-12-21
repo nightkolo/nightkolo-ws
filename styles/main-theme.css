@@ -16,6 +16,13 @@
   --opacity-box-shadow: 0.094;
 }
 
+@media (max-width: 700px) {
+  .div-lang-options > button {
+    font-size: medium !important;
+    padding: 8px !important;
+  }
+}
+
 #header-link {
   text-align: center;
 }
@@ -37,7 +44,7 @@
   color: white;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
-  font-size: large;
+  font-size: larger;
   background-color: rgba(0, 0, 0, 0);
   border: none;
   padding: 10px;
@@ -86,11 +93,15 @@ html.reduce-motion::before {
   }
 }
 
-body {
+/* English */
+html[lang="en"] body {
+  font-family: 'Nunito', sans-serif;
+}
+html[lang="en"] h1 {
   font-family: 'Nunito', sans-serif;
 }
 /* Arabic */
-html[lang="ar"] h1, h2 {
+html[lang="ar"] h1 {
   font-family: 'Playpen Sans Arabic', system-ui, sans-serif;
 }
 html[lang="ar"] body {

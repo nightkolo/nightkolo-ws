@@ -16,6 +16,7 @@ main {
 .heading {
   color: yellow;
   font-size: 52px;
+  font-weight: 800;
   margin: 0;
   text-shadow: 1px 8px 4px rgba(0, 0, 0, 0.1);
 } 
