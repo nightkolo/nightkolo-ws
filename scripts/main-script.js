@@ -1,3 +1,24 @@
+const enBtn = document.getElementById("enBtn");
+const arBtn = document.getElementById("arBtn");
+
+if (enBtn && arBtn){
+  arBtn.addEventListener("click", () => {
+    applyLanguageMeta("ar");
+  })
+
+  enBtn.addEventListener("click", () => {
+    applyLanguageMeta("en");
+  })
+}
+
+function applyLanguageMeta(lang) {
+  const html = document.documentElement;
+
+  html.lang = lang;
+  html.dir = (lang === "ar") ? "rtl" : "ltr";
+}
+
+
 const btn = document.getElementById("reduceMotionBtn");
 const root = document.documentElement;
 
@@ -30,3 +51,4 @@ if (btn) {
     btn.textContent = enabled ? "Enable motion" : "Reduce motion";
   });
 }
+

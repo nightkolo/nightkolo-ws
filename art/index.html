@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- <html lang="ar" dir="rtl"> -->
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Night Kolo's Digital Art page">
   <meta name="author" content="Night Kolo">
   
-  <!-- <meta property="og:title" content="Night Kolo's art">
+  <meta property="og:title" content="Night Kolo's art">
   <meta property="og:description" content="Me's Night Kolo -- Call me Kolo.">
   <meta property="og:url" content="https://nightkolo.io">
-  <meta property="og:type" content="website"> -->
+  <meta property="og:type" content="website">
 
   <link rel="icon" href="/media/img/favicon-02.png" type="image/x-icon">
   <link rel="stylesheet" href="/styles/main-theme.css">
@@ -19,8 +20,8 @@
 </head>
 <body>
   <div class="div-lang-options">
-      <button>EN</button>
-      <button>AR</button>
+      <button id="enBtn">EN</button>
+      <button id="arBtn">AR</button>
       <br>
       <button id="reduceMotionBtn">
         Reduce motion
@@ -37,24 +38,19 @@
       <span class="portal-sep">•</span>
       <a id="a-about-link" href="/about/">About</a>
     </nav>
-    <h1 class="heading">Art</h1>
+    <h1 class="heading">Art and Design</h1>
     <p>
-      Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. 
-      <br><br>
-      Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. Placeholder. 
+      I occassionally enjoy drawing illustrations on my Huion tablet. I also do vector-based art for my logo designs, game assets, and covers, as well as animating them in-game. My drawing style consists of simple character designs with attractive colorful illustrations. Kologen is my OC, which you see on the home page and my logo!
+    </p>
+    <p>
+      I regularly sketch on my sketchbook during my free-time at my major. Please enjoy what I got to offer on my little art gallery. Click for more info.
     </p>
     <div id="art-grid" class="div-grid-content">
 
-<!-- 
-      <div class="div-art-entry"
-          data-img="artwork/art-juhosprite.png"
-          data-title="Juho Sprite"
-          data-desc="Placeholder">
-        <div>
-          <img src="artwork/art-juhosprite.png" alt="">
-        </div>
-        <h2 class="unselectable">Juho Sprite</h2>
-      </div> -->
+      <p id="JS-disclaimer" style="opacity: 0.7; font-style: italic;">
+        If you don't see anything, be sure to enable JavaScript!
+      </p>
+
 
     </div>
   </main>
@@ -76,7 +72,7 @@
 
     <div class="modal-content">
       <img id="modal-img" src="" alt="">
-      <p id="modal-entry-number">0 / 0</p>
+      <p id="modal-entry-number">00 / 00</p>
       <h2 id="modal-title"></h2>
       <p id="modal-desc"></p>
     </div>

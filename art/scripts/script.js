@@ -1,101 +1,116 @@
 const artworks = [
   {
+    file: "vector/tank-is-tiny-cover.png",
+    title: "Tank is Tiny",
+    desc: "A piece of fanart I drew for Juho Sprite's OC"
+  },
+  {
     file: "art-juhosprite.png",
-    title: "Art Juho Sprite",
-    desc: "Placeholder"
+    title: "Juho Sprite",
+    desc: "A piece of fanart I drew for Juho Sprite's OC"
   },
   {
     file: "art-juhosprite-02.png",
-    title: "Art Juho Sprite 02",
+    title: "Juho Sprite Alt",
     desc: "Placeholder"
   },
   {
     file: "art-bomberman.png",
-    title: "Art Bomberman",
-    desc: "Placeholder"
+    title: "Bomberman",
+    desc: "This was a fun character, I tried to pay attention to lighting within the shading,"
   },
   {
     file: "IMG_3943.jpeg",
-    title: "Untitled 3943",
-    desc: "Placeholder"
+    title: "Bugscaper",
+    desc: "Piece of fanart for Bugscaper by my good friend Yolwoocle! Wish the game on steam (not sponsored :P)"
   },
   {
     file: "art-teevo.png",
-    title: "Art Teevo",
-    desc: "Placeholder"
+    title: "Teevo",
+    desc: "Bsky description"
   },
   {
     file: "jirachi-wip.png",
-    title: "Jirachi WIP",
-    desc: "Placeholder"
+    title: "Jirachi",
+    desc: "Bsky Description"
   },
   {
     file: "art-ettiko.png",
-    title: "Art Ettiko",
-    desc: "Placeholder"
+    title: "Ettiko",
+    desc: "Bsky desc."
   },
   {
     file: "art-kologen.png",
-    title: "Art Kologen",
-    desc: "Placeholder"
+    title: "Kologen",
+    desc: "Bsky desc."
+  },
+  {
+    file: "vector/boko-early-showcase.png",
+    title: "Boko Early",
+    desc: ""
+  },
+  {
+    file: "vector/bokoblock-logo-showcase.png",
+    title: "Bokoblock Logo",
+    desc: ""
   },
   {
     file: "wip-board-intrustor.png",
-    title: "WIP Board Intrustor",
-    desc: "Placeholder"
+    title: "Board Intrustor",
+    desc: "A piece of early digital art, experimenting"
   },
   {
     file: "06/man-of-the-wip.png",
     title: "Rayman",
-    desc: "Placeholder"
+    desc: ""
   },
   {
     file: "06/klonoa.png",
     title: "Klonoa",
-    desc: "Placeholder"
+    desc: ""
   },
   {
     file: "06/heartfelt.png",
-    title: "Heartfelt",
-    desc: "Placeholder"
+    title: "Pikachu",
+    desc: ""
   },
   {
     file: "06/hammer-02.png",
     title: "Amy",
-    desc: "Placeholder"
+    desc: ""
   },
   {
     file: "06/ettiko.png",
     title: "Ettiko Old",
-    desc: "Placeholder"
+    desc: ""
   },
   {
     file: "06/color-study.png",
     title: "Color Study",
-    desc: "Placeholder"
+    desc: ""
   },
 
   // --- 05 ---
   {
     file: "05/kologen-01.png",
     title: "Kologen Old",
-    desc: "Placeholder"
+    desc: ""
   },
   {
     file: "05/GRMLN.jpeg",
     title: "GRMLN",
-    desc: "Placeholder"
+    desc: ""
   },
   {
     file: "05/art-bogo.png",
-    title: "Art Bogo",
-    desc: "Placeholder"
+    title: "Bogo",
+    desc: ""
   }
 ];
 
 const grid = document.getElementById("art-grid");
-
-console.log("Hello?");
+const msg = document.getElementById("JS-disclaimer");
+if (msg) msg.remove();
 
 artworks.forEach(a => {
   const entry = document.createElement("div");

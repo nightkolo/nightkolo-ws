@@ -2,33 +2,46 @@
 
 /* functional decorators */
 :root {
-  --col-bg-koblue: #2c2c56;
-  --col-bg: rgb(155, 101, 255);
+  /* --col-bg-koblue: #2c2c56;
+  --col-bg: rgb(155, 101, 255); */
   --col-a: rgb(255, 253, 50);
   --col-a-v: rgb(255, 255, 100);
-  --brightness-font-main: 15;
+  /* --brightness-font-main: 15; */
   --brightness-shadow: 0.1;
-  --opacity-font-main: 1.0;
+  /* --opacity-font-main: 1.0; */
   --opacity-box: 0.25;
   --opacity-box-shadow: 0.094;
 }
 
-#header-link{
+#header-link {
   text-align: center;
 }
 
-#header-logo{
+#header-logo {
   width: 200px;
   margin: 50px auto;
 }
 
-.div-lang-options{
+.div-lang-options {
   position: absolute;
   text-align: right;
   top: 40px;
   right: 40px;
 }
 
+.div-lang-options > button {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: large;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.div-lang-options > button:hover {
+  font-weight: 900;
+}
 
 html {
   position: relative;
@@ -50,7 +63,7 @@ html::before {
   background-image: url('/media/bg/bg-03.png');
   background-repeat: repeat;
   background-position: center;
-  animation: bg-rotate 120s linear infinite;
+  animation: bg-rotate 240s linear infinite;
   z-index: -1;
 }
 
@@ -69,11 +82,6 @@ html.reduce-motion::before {
   }
 }
 
-/* html {
-  background-color: var(--col-bg);
-  color: rgba(var(--brightness-font-main), var(--brightness-font-main), var(--brightness-font-main), var(--opacity-font-main));
-} */
-
 body {
   font-family: 'Nunito', sans-serif;
 }
@@ -84,6 +92,11 @@ a {
 
 a:visited {
   color: var(--col-a-v);
+}
+
+footer {
+  text-align: center;
+  margin: 100px 100px 100px 100px;
 }
 
 /* optional decorators */
@@ -155,9 +168,4 @@ a:visited {
   -ms-user-select: none;       /* Internet Explorer/Edge */
   user-select: none;           /* Standard syntax */
   /* cursor: default;             Optional: ensures the cursor is an arrow, not a text selection caret */
-}
-
-footer {
-  text-align: center;
-  margin: 100px 100px 100px 100px;
 }
