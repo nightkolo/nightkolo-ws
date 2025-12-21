@@ -97,7 +97,7 @@ html.reduce-motion::before {
 html[lang="en"] body {
   font-family: 'Nunito', sans-serif;
 }
-html[lang="en"] h1 {
+html[lang="en"] h1, h2 {
   font-family: 'Nunito', sans-serif;
 }
 /* Arabic */
