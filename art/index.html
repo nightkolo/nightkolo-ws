@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="/styles/main-theme.css">
   <link rel="stylesheet" href="/styles/page-theme.css">
   <link rel="stylesheet" href="theme.css">
-  <title>Night Kolo &bullet; Art</title>
+  <title data-i18n="page-name.art">Night Kolo &bullet; Art</title>
 </head>
 <body>
   <div class="div-lang-options">
@@ -28,21 +28,19 @@
       </button>
     </div>
   <main>
-    <a href="../" title="Home Page">
+    <a href="../" title="Home Page" data-i18n-attr="title" data-i18n="titles.home">
       <img id="header-logo" src="/media/img/logo-white-01.png" alt="Logo">
     </a>
     <nav class="site-portal">
-      <a id="a-art-link" href="/art/">Art</a>
+      <a data-i18n="generic.art" id="a-art-link" href="/art/">Art</a>
       <span class="portal-sep">•</span>
-      <a id="a-games-link" href="/games/">Games</a>
+      <a data-i18n="generic.games" id="a-games-link" href="/games/">Games</a>
       <span class="portal-sep">•</span>
-      <a id="a-about-link" href="/about/">About</a>
+      <a data-i18n="generic.about" id="a-about-link" href="/about/">About</a>
     </nav>
-    <h1 class="heading">Art and Design</h1>
-    <p>
+    <h1 data-i18n="art.header" class="heading">Art and Design</h1>
+    <p data-i18n="art.desc">
       I occassionally enjoy drawing illustrations on my Huion tablet. I also do vector-based art for my logo designs, game assets, and covers, as well as animating them in-game. My drawing style consists of simple character designs with attractive colorful illustrations. Kologen is my OC, which you see on the home page and my logo!
-    </p>
-    <p>
       I regularly sketch on my sketchbook during my free-time at my major. Please enjoy what I got to offer on my little art gallery. Click for more info.
     </p>
     <div id="art-grid" class="div-grid-content">
@@ -54,11 +52,15 @@
 
     </div>
   </main>
-  <footer>
-    <span class="fx-span-hover">&#169; <script> document.write(new Date().getFullYear()) </script> Night Kolo &bullet;
-      <a href="/terms">Terms</a>,
-      <a href="/privacy">Privacy</a></span>
-  </footer>
+  <footer id="footer-footer">
+      <span class="fx-span-hover">&#169; <script> document.write(new Date().getFullYear()) </script> 
+        <span data-i18n="generic.footer">
+          Night Kolo &bullet;
+          <a href='/terms'>Terms</a>,
+          <a href='/privacy'>Privacy</a>
+        </span>
+      </span>
+    </footer>
 
   <!-- Popup -->
   <div id="art-modal" class="modal hidden">

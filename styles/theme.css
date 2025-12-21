@@ -53,7 +53,7 @@ body {
 
 .div-main-content .div-rightside {
   flex: 1;
-  text-align: left;
+  /* text-align: left; */
 }
 
 .img-pfp {

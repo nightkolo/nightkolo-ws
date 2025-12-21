@@ -1,13 +1,35 @@
 {
+  "page-name": {
+    "home": "موقع كولو",
+    "art": "نايت كولو (Night Kolo) &bullet; فن",
+    "game": "نايت كولو (Night Kolo) &bullet; ألعاب",
+    "about": "نايت كولو (Night Kolo) عن",
+    "terms": "Night Kolo &bullet; Terms of Service",
+    "privacy": "Night Kolo &bullet; Privacy Statement"
+  },
+  "titles": {
+    "art": "أعمالي الفنية",
+    "games": "ألعاب",
+    "about": "حول",
+    "home": "الصفحة الرئيسية",
+    "hi": "هلاااااااا - ◡ -"
+  },
   "generic": {
+    "footer": "نايت كولو (Night Kolo) &bullet; <a href='/terms'> الشروط</a>, <a href='/privacy'> سياسة الخصوصية</a>",
+    "art": "فن",
+    "games": "ألعاب",
+    "about": "حول"
   },
   "home": {
-    "greet": "أهلاً بك!",
-    "short-bio": "I'm <strong>Night Kolo</strong>, call me <strong>Kolo</strong>.",
-    "social-info": "My Socials:"
+    "greet": "السلام عليكم",
+    "short-bio": "أنا اسمي نايت كولو ، نادني كولو",
+    "social-info": ":حساباتي",
+    "art": "أعمالي الفنية",
+    "games": "ألعاب",
+    "about": "حول"
   },
   "art": {
-    "header": "Art",
-    "desc": "A collection of my digital and traditional artwork.\n\nPlease enjoy my little gallery."
+    "header": "الفن والتصميم",
+    "desc": "أنا أستمتع أحيانًا برسم على جهاز الرسم اللوحي من Huion. وبعد أصمم رسومات vector-based لشعاراتي، وعناصر ألعابي، وأغلفة ألعابي، بالإضافة إلى الأنيميشن داخل اللعبة. يتميز أسلوبي في الرسم بتصميم شخصيات مع رسومات ملونة جذابة. كولوجين هي شخصيتي الأصلية، والتي ترونها على الصفحة الرئيسية وشعاري!<br><br> أنا أرسم بانتظام في دفتر رسوماتي خلال أوقات فراغي في دراستي. تفضلوا بالاطلاع على ما أقدمه في معرضي الفني الصغير. انقر هنا للمزيد من المعلومات."
   }
 }

@@ -16,7 +16,7 @@
     <link rel="icon" href="media/img/favicon-02.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/main-theme.css">
     <link rel="stylesheet" href="styles/theme.css">
-    <title>Kolo's website</title>
+    <title data-i18n="page-name.home">Kolo's website</title>
   </head>
   <body>
     <div class="div-lang-options">
@@ -29,24 +29,30 @@
     </div>
 
     <div id="header-link">
-      <a href="." title="Home Page">
+      <a href="." title="Home Page" data-i18n-attr="title" data-i18n="titles.home">
         <img id="header-logo" src="/media/img/logo-white-01.png" alt="Logo">
       </a>
     </div>
 
     <div class="div-main-content fx-box">
       <div class="div-leftside">
-        <img class="img-kologen" src="media/elements/kologen-greet-01-01.png" alt="Kologen" title="Hi - ◡ -">
+        <img class="img-kologen" src="media/elements/kologen-greet-01-01.png" alt="Kologen" title="Hi - ◡ -" data-i18n-attr="title" data-i18n="titles.hi">
       </div>
       <div class="div-rightside">
         <main>
-          <h1>Hello there!</h1>
-          <p> I&#39;m <strong>Night Kolo</strong>, call me <strong>Kolo</strong>.</p>
+          <h1 data-i18n="home.greet">Hello there!</h1>
+          <p data-i18n="home.short-bio"> I&#39;m <strong>Night Kolo</strong>, call me <strong>Kolo</strong>.</p>
           <p> 
             <strong>
-              <a class="a-portal-link" href="art/" title="My Art">My Art</a>,
-              <a class="a-portal-link" href="games/" title="My Games">My Games</a>, 
-              <a class="a-portal-link" href="about/" title="About Me">About Me</a>
+              <a data-i18n="home.art" class="a-portal-link" href="art/" title="My Art"
+              data-i18n-attr="title"
+              data-i18n="titles.art">My Art</a>,
+              <a data-i18n="home.games" class="a-portal-link" href="games/" title="My Games"
+              data-i18n-attr="title"
+              data-i18n="titles.games">My Games</a>, 
+              <a data-i18n="home.about" class="a-portal-link" href="about/" title="About Me"
+              data-i18n-attr="title"
+              data-i18n="titles.about">About Me</a>
             </strong>
           </p>
         </main>
@@ -54,7 +60,7 @@
     </div>
 
     <div id="div-social-links">
-      <p><strong>My Socials:</strong></p>
+      <p data-i18n="home.social-info"><strong>My Socials:</strong></p>
       <p> 
         <a class="social-link" target="_blank" href="https://night-kolo.itch.io" title="Itch.io">
           <img class="img-icon" src="media/logo/icon-itchio.svg" alt="">
@@ -78,9 +84,13 @@
     </div>
 
     <footer id="footer-footer">
-      <span class="fx-span-hover">&#169; <script> document.write(new Date().getFullYear()) </script> Night Kolo &bullet;
-      <a href="/terms">Terms</a>,
-      <a href="/privacy">Privacy</a></span>
+      <span class="fx-span-hover">&#169; <script> document.write(new Date().getFullYear()) </script> 
+        <span data-i18n="generic.footer">
+          Night Kolo &bullet;
+          <a href='/terms'>Terms</a>,
+          <a href='/privacy'>Privacy</a>
+        </span>
+      </span>
     </footer>
     <script src="/scripts/main-script.js"></script>
     <script src="/scripts/prefs.js"></script>

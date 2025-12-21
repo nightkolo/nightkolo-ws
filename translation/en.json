@@ -1,13 +1,35 @@
 {
+  "page-name": {
+    "home": "Kolo's website",
+    "art": "Night Kolo &bullet; Art",
+    "game": "Night Kolo &bullet; Games",
+    "about": "About Night Kolo",
+    "terms": "Night Kolo &bullet; Terms of Service",
+    "privacy": "Night Kolo &bullet; Privacy Statement"
+  },
+  "titles": {
+    "art": "My Art",
+    "games": "My Games",
+    "about": "About Me",
+    "home": "Home Page",
+    "hi": "Hi - ◡ -"
+  },
   "generic": {
+    "footer": "Night Kolo &bullet; <a href='/terms'>Terms</a>, <a href='/privacy'>Privacy</a>",
+    "art": "Art",
+    "games": "Games",
+    "about": "About"
   },
   "home": {
     "greet": "Hello there!",
     "short-bio": "I'm <strong>Night Kolo</strong>, call me <strong>Kolo</strong>.",
-    "social-info": "My Socials:"
+    "social-info": "<strong>My Socials:</strong>",
+    "art": "My Art",
+    "games": "My Games",
+    "about": "About Me"
   },
   "art": {
-    "header": "Art",
-    "desc": "A collection of my digital and traditional artwork.\n\nPlease enjoy my little gallery."
+    "header": "Art and Design",
+    "desc": "I occassionally enjoy drawing illustrations on my Huion tablet. I also do vector-based art for my logo designs, game assets, and covers, as well as animating them in-game. My drawing style consists of simple character designs with attractive colorful illustrations. Kologen is my OC, which you see on the home page and my logo!<br><br>I regularly sketch on my sketchbook during my free-time at my major. Please enjoy what I got to offer on my little art gallery. Click for more info."
   }
 }
