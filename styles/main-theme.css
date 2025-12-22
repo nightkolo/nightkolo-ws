@@ -97,11 +97,17 @@ html.reduce-motion::before {
 html[lang="en"] body {
   font-family: 'Nunito', sans-serif;
 }
-html[lang="en"] h1, h2 {
+html[lang="en"] h2 {
+  font-family: 'Nunito', sans-serif;
+}
+html[lang="en"] h1 {
   font-family: 'Nunito', sans-serif;
 }
 /* Arabic */
-html[lang="ar"] h1, h2 {
+html[lang="ar"] h1 {
+  font-family: 'Playpen Sans Arabic', system-ui, sans-serif;
+}
+html[lang="ar"] h2 {
   font-family: 'Playpen Sans Arabic', system-ui, sans-serif;
 }
 html[lang="ar"] body {

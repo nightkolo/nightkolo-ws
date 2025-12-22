@@ -8,6 +8,9 @@
   .div-art-entry img {
     height: 140px;
   }
+  .modal > button {
+    display: none;
+  }
 }
 
 body {
@@ -112,13 +115,22 @@ body {
 }
 
 .modal > button {
+  position: fixed;
   padding: 10px;
-  border-radius: 100%;
+  /* border-radius: 100%; */
+  background-color: rgba(0, 0, 0, 0);
   border: none;
 }
 
 .modal > button > img {
-  width: 10px;
+  width: 20px;
+}
+
+#modal-right-btn{
+  right: 20px;
+}
+#modal-left-btn{
+  left: 20px;
 }
 
 #modal-desc {
@@ -142,7 +154,7 @@ body {
   border-radius: var(--border-rad);
 
   /* Space between content and edges */
-  padding: 20px; 
+  /* padding: 20px;  */
   /* Prevent modal from being too wide */
   max-width: 100%; 
   /* Prevent modal from being too tall */
@@ -165,7 +177,7 @@ body {
   /* Prevent horizontal overflow */
   max-width: 100%; 
   /* Limit image height to viewport height */
-  max-height: 80vh; 
+  max-height: 82vh; 
   border-radius: var(--border-rad-small);
 }
 
