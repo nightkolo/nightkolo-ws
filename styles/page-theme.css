@@ -4,11 +4,11 @@ body {
   margin: 0 auto;
 }
 
-main {
+.div-main {
   text-align: center;
 }
 
-main > p {
+.div-main > p {
   font-size: large;
 }
 

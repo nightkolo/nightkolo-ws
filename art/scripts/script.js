@@ -21,7 +21,7 @@ const artworks = [
   },
   {
     file: "IMG_3943.jpeg",
-    title: "Bugscaper",
+    title: "Bugscraper",
     desc: "Piece of fanart for Bugscaper by my good friend Yolwoocle! wishlist his game on steam! (not sponsored) :P"
   },
   {
