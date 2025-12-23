@@ -61,6 +61,11 @@
   transition: all 300ms;
 }
 
+
+#a-games-link {
+  font-weight: 900;
+}
+
 .a-game-link:hover {
   font-weight: 700;
 }

@@ -15,7 +15,8 @@
     "hi": "هلاااااااا - ◡ -"
   },
   "generic": {
-    "footer": "نايت كولو (Night Kolo) &bullet; <a href='/terms'> الشروط</a>, <a href='/privacy'> سياسة الخصوصية</a>",
+    "footer": "نايت كولو (Night Kolo) &bullet; <a href='/terms'> الشروط</a>, <a href='/privacy'> سياسة الخصوصية</a><br><a href='#'>العودة إلى الأعلى</a>",
+    "footer-home": "نايت كولو (Night Kolo) &bullet; <a href='/terms'> الشروط</a>, <a href='/privacy'> سياسة الخصوصية</a>",
     "art": "فن",
     "games": "ألعاب",
     "about": "حول"

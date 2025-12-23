@@ -15,7 +15,8 @@
     "hi": "Hi - ◡ -"
   },
   "generic": {
-    "footer": "Night Kolo &bullet; <a href='/terms'>Terms</a>, <a href='/privacy'>Privacy</a>",
+    "footer": "Night Kolo &bullet; <a href='/terms'>Terms</a>, <a href='/privacy'>Privacy</a><br><a href='#'>Back to Top</a>",
+    "footer-home": "Night Kolo &bullet; <a href='/terms'>Terms</a>, <a href='/privacy'>Privacy</a>",
     "art": "Art",
     "games": "Games",
     "about": "About"
