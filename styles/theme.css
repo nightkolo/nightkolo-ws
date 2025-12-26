@@ -21,6 +21,9 @@ body {
   #footer {
     margin: 0px 15px 0px 15px !important;
   }
+  .div-main-content:hover .img-kologen {
+    width: 250px !important;
+  }
 }
 
 #div-social-links {

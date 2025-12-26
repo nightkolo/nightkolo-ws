@@ -101,14 +101,21 @@
       const el = document.querySelector(".div-main-content");
 
       el.addEventListener("mouseenter", () => {
+        if (document.documentElement.clientWidth < 700){
+          returnPos();
+          return;
+        }
+
         img.style.transform = "translateY(-55px)";
         img.src = "media/elements/kologen-greet-02-02.png";
       });
 
-      el.addEventListener("mouseleave", () => {
+      el.addEventListener("mouseleave", returnPos);
+
+      function returnPos() {
         img.style.transform = "translateY(0)";
         img.src = "media/elements/kologen-greet-01-01.png";
-      });
+      }
     </script>
   </body>
 </html>
