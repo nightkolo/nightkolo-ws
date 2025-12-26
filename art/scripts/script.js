@@ -92,6 +92,11 @@ const artworks = [
 
   // --- 05 ---
   {
+    file: "legacy/birthday.jpg",
+    title: "Birthday",
+    desc: "Kologen, celebrating his birthday (December 27, my birthday!). He's holding a wrapped gift box with a big bow, standing in a cheerful pose. I wonder what's inside the gift..."
+  },
+  {
     file: "05/kologen-01.png",
     title: "Kologen Old",
     desc: "An older sketch of my OC, Kologen! with a first showcase of his butt! He's drawn in three different poses. He has a simple, cartoon-like design with a rounded body, large ear-like side shapes on the head, with a crescent moon on his head (get it? 'Night' Kolo?). He has a minimalist expression with closed eyed (but he can still see you)."
@@ -105,6 +110,11 @@ const artworks = [
     file: "05/art-bogo.png",
     title: "Bogo",
     desc: "A sketch of an OC named Bogo with bear-like ears, big oval eyes, and a large scarf covering its mouth. The character has a round belly with a monstrous mouth. He's also a cutie patootie :3"
+  },
+  {
+    file: "legacy/kologen-first.jpg",
+    title: "First Kologen",
+    desc: "'I first called em Heart-headed for having heart on his head, but now it's a crescent moon. His eyes may be asleep, but he can still see you :)' (Dec 13, 2024)"
   }
 ];
 
