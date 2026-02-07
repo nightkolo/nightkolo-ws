@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans+Arabic:wght@100..800&display=swap');
 
@@ -7,7 +6,7 @@
 :root {
   /* --col-bg-koblue: #2c2c56;
   --col-bg: rgb(155, 101, 255); */
-  --col-a: rgb(255, 253, 50);
+  --col-a: rgb(255, 253, 50); 
   --col-a-v: rgb(255, 255, 100);
   /* --brightness-font-main: 15; */
   --brightness-shadow: 0.1;
@@ -58,6 +57,7 @@ html {
   position: relative;
   min-height: 100%;
   color: white;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -81,6 +81,9 @@ html::before {
 /* Reduce motion mode */
 html.reduce-motion::before {
   animation: none;
+}
+html.reduce-motion {
+  scroll-behavior: auto;
 }
 
 /* Rotates the background slowly and smoothly for a dynamic visual effect */
