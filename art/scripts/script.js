@@ -17,7 +17,7 @@ const artworks = [
   {
     file: "art-bomberman.png",
     title: "Bomberman",
-    desc: "<a target='_blank' herf='https://www.newgrounds.com/art/view/night-kolo/kologen'>Watch Speedpaint</a> - This was a fun character."
+    desc: "This was a fun character."
   },
   {
     file: "IMG_3943.jpeg",
@@ -42,7 +42,7 @@ const artworks = [
   {
     file: "art-kologen.png",
     title: "Kologen",
-    desc: "<a target='_blank' herf='https://www.newgrounds.com/art/view/night-kolo/kologen'>Backstory</a> - 3 illustrations of my OC, Kologen! They are a robot-like crescent moon head with two large silver parts resembling their ear (he can still hear), and their eyes appear closed (he can still see), and their arms are limbless (he is... Rayman). You're probably wondering what kind of analog horror entity is this?... it's Kologen."
+    desc: "<3 illustrations of my OC, Kologen! They are a robot-like crescent moon head with two large silver parts resembling their ear (he can still hear), and their eyes appear closed (he can still see), and their arms are limbless (he is... Rayman). You're probably wondering what kind of analog horror entity is this?... it's Kologen."
   },
   {
     file: "vector/boko-early-showcase.png",
@@ -104,7 +104,7 @@ const artworks = [
   {
     file: "05/GRMLN.jpeg",
     title: "GRMLN",
-    desc: "<a target='_blank' herf='https://www.newgrounds.com/art/view/night-kolo/kologen'>Post</a> - Fanart of Ethan8bit's OC on Bluesky!"
+    desc: "Fanart of Ethan8bit's OC on Bluesky!"
   },
   {
     file: "05/art-bogo.png",
