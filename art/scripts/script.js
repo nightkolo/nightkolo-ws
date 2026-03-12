@@ -1,5 +1,25 @@
 const artworks = [
   {
+    file: "26-03/eon-final.png",
+    title: "EON (AxelCuevana7)",
+    desc: "I drew a piece of fanart of EON. An awesome OC by AlexCuevana7 on Twitter!"
+  },
+  {
+    file: "26-03/oblade-final.png",
+    title: "Oblade",
+    desc: "An arsenal yellow and pink blade machine straight from Planet Popstar! This is another OC design I drew! An idea I had for a while."
+  },
+  {
+    file: "26-03/ladies.jpg",
+    title: "Marshmallow Lady",
+    desc: "A cheerful and sweet character. Proposed for my upcoming game, Mashmallows. She likes making jokes and is super eccentric yet joyful about everything. A running gag is that she doesn’t want to be ate as she is made out of candy like the characters that the player controls, don’t worry though, she can regenerate."
+  },
+  {
+    file: "25-12/logo-showcase.png",
+    title: "Tank is Tiny Logo",
+    desc: ""
+  },
+  {
     file: "vector/tank-is-tiny-cover.png",
     title: "Tank is Tiny",
     desc: "Game cover for my game"
