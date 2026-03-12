@@ -2,7 +2,7 @@ const artworks = [
   {
     file: "26-03/eon-final.png",
     title: "EON (AxelCuevana7)",
-    desc: "I drew a piece of fanart of EON. An awesome OC by AlexCuevana7 on Twitter!"
+    desc: "I drew a piece of fanart of EON. An awesome OC by AxelCuevana7 on Twitter!"
   },
   {
     file: "26-03/oblade-final.png",
