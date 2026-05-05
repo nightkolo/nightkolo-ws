@@ -10,8 +10,10 @@
   "hover-info": {
     "art": "My Art",
     "games": "My Games",
+		"donate": "Support Me!",
     "about": "About Me",
     "home": "Home Page",
+		"donate": "Support Me!",
     "hi": "Hi - ◡ -"
   },
   "generic": {
@@ -28,6 +30,8 @@
     "social-notice": "I am not in some socials for the time-being.",
     "art": "My Art",
     "games": "My Games",
+		"donate": "<br>Support",
+		"discord": "Join my Discord!",
     "about": "About Me"
   },
   "art-page": {
