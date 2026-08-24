@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-src_dir="artwork"
-dst_dir="thumbnails"
+src_dir=""
+dst_dir=""
 
 find "$src_dir" -type f \( \
   -iname "*.jpg" -o \

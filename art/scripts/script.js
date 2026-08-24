@@ -5,26 +5,31 @@ const artworks = [
     desc: ""
   },
   {
-    file: "26-08/galagen-f2-v3.png",
+		file: "26-08/08-22-syc.png",
     title: "",
     desc: ""
   },
   {
-    file: "26-08/08-22-syc.png",
+		file: "26-08/08-22-rday.png",
     title: "",
     desc: ""
   },
   {
-    file: "26-08/08-22-rday.png",
+		file: "26-08/08-18-DrSpyn.png",
     title: "",
     desc: ""
   },
-  {
-    file: "26-08/08-18-DrSpyn.png",
-    title: "",
-    desc: ""
-  },
-
+	
+	{
+		file: "26-08/poster-ng.png",
+		title: "",
+		desc: ""
+	},
+	{
+		file: "26-08/ost-cover-02.png",
+		title: "",
+		desc: ""
+	},
   {
     file: "26-07/yok-final-02.png",
     title: "",
@@ -40,11 +45,11 @@ const artworks = [
     title: "",
     desc: ""
   },
-  {
-    file: "26-07/shibby-bg.png",
-    title: "",
-    desc: ""
-  },
+  // {
+  //   file: "26-07/shibby-bg.png",
+  //   title: "",
+  //   desc: ""
+  // },
   {
     file: "26-07/hp-final-v1.png",
     title: "",
