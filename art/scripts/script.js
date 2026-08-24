@@ -1,48 +1,53 @@
 const artworks = [
   {
     file: "26-08/galagen-f2.png",
-    title: "",
-    desc: ""
+    title: "Galagen the Astro Robogirl",
+    desc: "APOLLO 2000: This is a fictional mission program where Galagen, an autonomous cosmic robot, ventures into uncharted territory to fuel her enthusiasm about outer space. (Not affiliated with NASA so you don't sue me) She is best friends with Kologen."
   },
-  {
-		file: "26-08/08-22-syc.png",
-    title: "",
-    desc: ""
+	{
+    file: "26-05/kologen-final-02.png",
+    title: "Kologen",
+    desc: "A newly character design for my main OC, Kologen."
   },
   {
 		file: "26-08/08-22-rday.png",
-    title: "",
+    title: "Robot Day 2026",
     desc: ""
   },
+	{
+		file: "26-08/08-22-syc.png",
+		title: "Select Your Character",
+		desc: ""
+	},
   {
 		file: "26-08/08-18-DrSpyn.png",
-    title: "",
-    desc: ""
+    title: "DrSpyn Art Gift",
+    desc: "My art gift/trade with DrSpyn on Instagram! (@dr.spyn)"
   },
 	
 	{
 		file: "26-08/poster-ng.png",
-		title: "",
+		title: "Mashmallows Game Cover",
 		desc: ""
 	},
 	{
 		file: "26-08/ost-cover-02.png",
-		title: "",
-		desc: ""
+		title: "Mashmallow OST Cover",
+		desc: "Yøk"
 	},
   {
     file: "26-07/yok-final-02.png",
-    title: "",
+    title: "Yøk X EON (AxelCuevana7)",
     desc: ""
   },
   {
     file: "26-07/yok-bg.png",
-    title: "",
+    title: "Background: Yøk X EON",
     desc: ""
   },
   {
     file: "26-07/shibby-final.png",
-    title: "",
+    title: "Shibby (mollusk_by_nature)",
     desc: ""
   },
   // {
@@ -52,34 +57,30 @@ const artworks = [
   // },
   {
     file: "26-07/hp-final-v1.png",
-    title: "",
+    title: "Hit Points",
     desc: ""
   },
   {
     file: "26-07/ayako-final-02.png",
-    title: "",
+    title: "Ayako (Darkniel76)",
     desc: ""
   },
 
   {
     file: "26-06/millie-final-01.png",
-    title: "",
-    desc: ""
+    title: "Marshmallow Lady",
+    desc: "A candy OC that I made for my game, Mashmallows! She's a sweet gal made out of candy, her hair is marshmallow twists and her rear is cake of course."
   },
   {
     file: "26-06/k.png",
-    title: "",
+    title: "Kologen",
     desc: ""
   },
 
-  {
-    file: "26-05/kologen-final-02.png",
-    title: "",
-    desc: ""
-  },
+  
   {
     file: "26-05/k1-w1-final.png",
-    title: "",
+    title: "K1-W1 (Xandyx)",
     desc: ""
   },
 	
