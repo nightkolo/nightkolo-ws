@@ -10,10 +10,10 @@
   
   <meta property="og:title" content="Night Kolo">
   <meta property="og:description" content="Night Kolo's personal website — games, digital art, and projects by hobbyist game developer and artist. Call me Kolo.">
-  <meta property="og:url" content="https://nightkolo.io">
+  <meta property="og:url" content="https://nightkolo.com">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Night Kolo">
-  <!-- <meta property="og:image" content="https://nightkolo.io/media/img/og-preview.png"> -->
+  <!-- <meta property="og:image" content="https://nightkolo.com/media/img/og-preview.png"> -->
   
   <link rel="icon" href="media/img/favicon-02.png" type="image/x-icon">
   <link rel="stylesheet" href="styles/main.css">
@@ -36,12 +36,17 @@
       </a>
     </div>
 
+		<!-- PROFILE CARD -->
     <div class="div-main-content fx-box">
-      <div class="div-leftside">
-        <img class="img-kologen" src="/media/elements/kologen-greet-01-02.png" alt="Kologen" title="Hi - ◡ -" data-i18n-attr="title" data-i18n="hover-info.hi">
+			
+			<div class="div-leftside">
+				<img class="img-kologen" src="/media/elements/kologen-greet-01-02.png" alt="Kologen" title="Hi - ◡ -" data-i18n-attr="title" data-i18n="hover-info.hi">
       </div>
-      <div class="div-rightside">
-        <main>
+      
+			<div class="div-rightside">
+				<main>
+					<!-- MAIN CONTENT -->
+
           <h1 data-i18n="home-page.greet"></h1>
           <p data-i18n="home-page.short-bio"></p>
           <p> 
@@ -118,7 +123,7 @@
       const el = document.querySelector(".div-main-content");
 
       el.addEventListener("mouseenter", () => {
-        if (document.documentElement.clientWidth < 700){
+        if (document.documentElement.clientWidth < 850){
           returnPos();
           return;
         }

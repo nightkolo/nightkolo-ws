@@ -32,8 +32,8 @@ const artworks = [
 	},
 	{
 		file: "26-08/ost-cover-02.png",
-		title: "Mashmallow OST Cover",
-		desc: "Yøk"
+		title: "Mashmallows OST Cover",
+		desc: ""
 	},
   {
     file: "26-07/yok-final-02.png",
