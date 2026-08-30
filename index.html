@@ -15,20 +15,19 @@
   <meta property="og:site_name" content="Night Kolo">
   <!-- <meta property="og:image" content="https://nightkolo.com/media/img/og-preview.png"> -->
   
-  <link rel="icon" href="media/img/favicon-02.png" type="image/x-icon">
+	<link rel="preload" href="/media/elements/kologen-greet-02-03.png" as="image" media="(min-width: 850px) and (hover: hover) and (pointer: fine)">
+
+  <link rel="icon" href="media/img/favicon-02.png" type="image/png">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/theme.css">
   <title data-i18n="page-name.home">Kolo's website</title>
 </head>
   <body>
-    <div class="div-lang-options">
-      <button id="enBtn">EN</button>
-      <button id="arBtn">AR</button>
-      <br>
-      <button id="reduceMotionBtn">
-        Reduce motion
-      </button>
-    </div>
+    <div class="div-lang-options" aria-label="Language and animation preferences">
+			<button id="enBtn" type="button" lang="en" aria-label="Display in English">EN</button>
+			<button id="arBtn" type="button" lang="ar" aria-label="عرض الموقع بالعربية">AR</button>
+			<button id="reduceMotionBtn" type="button" aria-pressed="false">Reduce motion</button>
+		</div>
 
     <div id="header-link">
       <a href="." title="Home Page" data-i18n-attr="title" data-i18n="hover-info.home">
@@ -46,7 +45,6 @@
 			<div class="div-rightside">
 				<main>
 					<!-- MAIN CONTENT -->
-
           <h1 data-i18n="home-page.greet"></h1>
           <p data-i18n="home-page.short-bio"></p>
           <p> 
@@ -75,7 +73,7 @@
     </div>
 
     <div id="div-social-links">
-      <p data-i18n="home-page.social-info"><strong></strong></p>
+      <p data-i18n="home-page.social-info"></p>
       <!-- <i style="color: rgba(255, 255, 255, 0.5);">
       <p data-i18n="home-page.social-notice"></p>
       </i> -->
@@ -102,7 +100,7 @@
           <img class="img-icon" src="media/logo/icon-github.svg" alt="Github Icon">
         </a>
         <a class="social-link" target="_blank" href="https://www.youtube.com/@NightKolo?sub_confirmation=true" title="YouTube">
-          <img class="img-icon" src="media/logo/icon-youtube.svg" alt="Yout ube Icon">
+          <img class="img-icon" src="media/logo/icon-youtube.svg" alt="Youtube Icon">
         </a>
       </p>
     </div>

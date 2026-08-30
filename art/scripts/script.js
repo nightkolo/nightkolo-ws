@@ -19,6 +19,11 @@ const artworks = [
 		title: "Select Your Character",
 		desc: ""
 	},
+	{
+		file: "26-08/08-28-dumptruck-butterfly.png",
+    title: "Butterfly (Planetronika)",
+    desc: ""
+  },
   {
 		file: "26-08/08-18-DrSpyn.png",
     title: "DrSpyn Art Gift",

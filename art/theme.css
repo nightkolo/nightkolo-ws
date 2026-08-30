@@ -103,7 +103,7 @@ body {
   /* Stretch to all screen edges (top/right/bottom/left = 0) */
   inset: 0;
   /* Semi-transparent dark backdrop */
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(1, 1, 1, 0.5); 
   /* Enable flexbox for centering content */
   display: flex;
   /* Center modal content vertically */
@@ -177,7 +177,7 @@ body {
   /* Prevent horizontal overflow */
   max-width: 100%; 
   /* Limit image height to viewport height */
-  max-height: 82vh; 
+  max-height: 87vh; 
   border-radius: var(--border-rad-small);
 }
 
