@@ -15,9 +15,13 @@
   --opacity-box-shadow: 0.094;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
+	.div-lang-options {
+		margin-top: 50px !important;
+		position: static !important;
+	}
   .div-lang-options > button {
-    font-size: medium !important;
+    font-size: larger !important;
     padding: 8px !important;
   }
 }
